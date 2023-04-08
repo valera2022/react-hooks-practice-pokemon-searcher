@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import PokemonPage from "./PokemonPage";
 
 function App() {
+  const[data,setData]= useState([])
+
+
   return (
     <div className="App">
-      <PokemonPage />
+      <PokemonPage data={data} setData={setData} />
     </div>
   );
 }
